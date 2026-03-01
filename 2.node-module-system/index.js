@@ -4,3 +4,10 @@
 const firstModule = require('./first-module');
 
 console.log(firstModule.add(2,3));
+
+try{
+    console.log(firstModule.div(0,2));
+}
+catch(error){
+    console.log("Divide by zero is NaN");
+}
